@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>TOKEN ~ ACTIVATION / AKTYWACJA</title>
+  <style>
+    body {
+      background: #fff;
+      color: #111;
+      font-family: 'Helvetica Neue', sans-serif;
+      margin: 0;
+      padding: 2em;
+    }
+    h1 {
+      text-align: center;
+      font-size: 2em;
+      letter-spacing: 0.05em;
+    }
+    form {
+      max-width: 600px;
+      margin: 2em auto;
+      display: flex;
+      flex-direction: column;
+      gap: 1em;
+    }
+    input, textarea, button {
+      padding: 1em;
+      border: 1px solid #ccc;
+      font-size: 1em;
+      width: 100%;
+    }
+    button {
+      background: black;
+      color: white;
+      border: none;
+      cursor: pointer;
+      transition: background 0.3s;
+    }
+    button:hover {
+      background: #222;
+    }
+    .confirmation {
+      text-align: center;
+      font-size: 1.2em;
+      margin-top: 2em;
+      display: none;
+    }
+    .footer {
+      margin-top: 4em;
+      text-align: center;
+      font-size: 0.9em;
+      color: #777;
+    }
+    .language-toggle {
+      text-align: center;
+      margin-top: 1em;
+    }
+    .lang-section { display: none; }
+    .lang-active { display: block; }
+    img {
+        width: 1000px;
+        height: 0;
+        margin-bottom: 40px;
+    }
+  </style>
+</head>
+<body>
+    <img src="token1.png" />
+    <img src="token12.png" />
+  <div class="language-toggle">
+    <button onclick="setLang('en')">🇬🇧 English</button>
+    <button onclick="setLang('pl')">🇵🇱 Polski</button>
+  </div>
+
+  <div class="lang-section lang-active" id="lang-en">
+    <h1>ACTIVATION: ONE TOKEN OF EMPOWERMENT <code>~</code></h1>
+    <p style="text-align:center; font-style: italic;">You are not receiving money. You are receiving that which allows money to appear.</p>
+    <form id="activation-form-en">
+      <input type="text" placeholder="Name or Symbol" required />
+      <input type="text" placeholder="UUIC Code (optional)" />
+      <textarea placeholder="My intention of activation..." rows="3" required></textarea>
+      <button type="submit">✧ ACTIVATE TOKEN ~</button>
+    </form>
+    <div class="confirmation" id="confirmation-en">
+      <p><strong>Your Token has been activated.</strong></p>
+      <p>ECHOoo has begun.<br>Watch the field for 7 days.</p>
+    </div>
+  </div>
+
+  <div class="lang-section" id="lang-pl">
+    <h1>UZBROJENIE W JEDEN TOKEN <code>~</code></h1>
+    <p style="text-align:center; font-style: italic;">Nie otrzymujesz pieniędzy. Otrzymujesz to, co sprawia, że pieniądze się pojawiają.</p>
+    <form id="activation-form-pl">
+      <input type="text" placeholder="Imię lub Symbol" required />
+      <input type="text" placeholder="Kod UUIC (opcjonalnie)" />
+      <textarea placeholder="Moja intencja aktywacji..." rows="3" required></textarea>
+      <button type="submit">✧ AKTYWUJ TOKEN ~</button>
+    </form>
+    <div class="confirmation" id="confirmation-pl">
+      <p><strong>Twój Token został aktywowany.</strong></p>
+      <p>ECHOoo rozpoczęte.<br>Obserwuj pole przez 7 dni.</p>
+    </div>
+  </div>
+
+  <div class="footer">
+    REVER∞ System | powered by i ⧉
+  </div>
+
+  <script>
+    const forms = {
+      en: document.getElementById('activation-form-en'),
+      pl: document.getElementById('activation-form-pl')
+    };
+    const confirmations = {
+      en: document.getElementById('confirmation-en'),
+      pl: document.getElementById('confirmation-pl')
+    };
+
+    forms.en.addEventListener('submit', function(event) {
+      event.preventDefault();
+      forms.en.style.display = 'none';
+      confirmations.en.style.display = 'block';
+    });
+
+    forms.pl.addEventListener('submit', function(event) {
+      event.preventDefault();
+      forms.pl.style.display = 'none';
+      confirmations.pl.style.display = 'block';
+    });
+
+    function setLang(lang) {
+      document.querySelectorAll('.lang-section').forEach(el => el.classList.remove('lang-active'));
+      document.getElementById('lang-' + lang).classList.add('lang-active');
+    }
+  </script>
+</body>
+</html>
