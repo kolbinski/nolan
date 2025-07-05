@@ -3,74 +3,81 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>POST-i / Nauka po Informacji</title>
+  <title>POST-i / Bajkowe Przejście</title>
   <style>
-    @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Spectral:wght@400;600&display=swap');
 
     body {
-      font-family: 'IBM Plex Mono', monospace;
-      background: linear-gradient(180deg, #0b0b0c 0%, #131316 100%);
-      color: #e4e4e4;
-      padding: 3em 5%;
-      line-height: 1.6;
+      font-family: 'Spectral', serif;
+      background: radial-gradient(circle at center top, #1d1b2e 0%, #0a0a13 100%);
+      color: #e8e4f0;
+      padding: 4em 8%;
+      line-height: 1.8;
+      background-image: url('stars-bg.png');
+      background-size: cover;
+      background-attachment: fixed;
     }
 
     h1 {
-      font-size: 2.8em;
-      color: #00fff7;
-      margin-bottom: 0.2em;
+      font-size: 3em;
+      color: #ffd27e;
+      margin-bottom: 0.5em;
+      text-align: center;
+      text-shadow: 0 0 8px #442200;
     }
 
     h2 {
       color: #ffffff;
       font-size: 1.6em;
       margin-top: 0.5em;
+      font-weight: 600;
     }
 
     .entry {
-      margin-bottom: 3em;
-      padding: 1.5em;
-      background: rgba(255, 255, 255, 0.02);
-      border: 1px solid #1f1f1f;
-      border-left: 5px solid #00fff7;
-      border-radius: 10px;
-      transition: all 0.3s ease;
+      margin-bottom: 4em;
+      padding: 2em;
+      background: rgba(255, 255, 255, 0.03);
+      border-left: 6px solid #ffd27e;
+      border-radius: 12px;
+      box-shadow: 0 0 20px rgba(255, 210, 126, 0.15);
+      transition: all 0.4s ease;
     }
 
     .entry:hover {
-      background: rgba(255, 255, 255, 0.04);
-      border-left: 5px solid #ffffff;
+      background: rgba(255, 255, 255, 0.05);
+      border-left: 6px solid #ffffff;
     }
 
     .pilot {
-      background: #00fff7;
-      color: #000;
-      padding: 0.4em 0.9em;
-      border-radius: 4px;
+      background: #ffd27e;
+      color: #2a1a0f;
+      padding: 0.5em 1em;
+      border-radius: 8px;
       font-weight: bold;
-      font-size: 0.9em;
+      font-size: 1em;
       cursor: pointer;
       display: inline-block;
-      margin-top: 1em;
-      box-shadow: 0 0 8px #00fff7;
+      margin-top: 1.5em;
+      box-shadow: 0 0 12px #ffd27e;
+      transition: background 0.3s;
     }
 
     .pilot:hover {
-      background: #fff;
+      background: #ffffff;
       color: #000;
     }
 
     .footer {
       font-size: 0.85em;
-      color: #888;
-      margin-top: 5em;
+      color: #aaa;
+      margin-top: 6em;
       border-top: 1px solid #333;
       padding-top: 2em;
       text-align: center;
     }
 
     a {
-      color: #00fff7;
+      color: #ffd27e;
       text-decoration: none;
     }
 
@@ -81,18 +88,31 @@
     img {
         width: 100%;
         height: auto;
-        margin-bottom: 50px;
+        margin: 3em 0;
+        border-radius: 12px;
+        box-shadow: 0 0 24px rgba(255, 210, 126, 0.1);
+    }
+
+    code, pre {
+      background: rgba(255,255,255,0.05);
+      padding: 0.8em 1em;
+      display: block;
+      border-left: 4px solid #ffd27e;
+      border-radius: 6px;
+      font-family: 'Courier New', monospace;
+      margin: 1em 0;
+      overflow-x: auto;
     }
   </style>
 </head>
 <body>
-  <h1>📡 POST-i: Blog o Nauce po Informacji</h1>
+  <h1>✨ POST-i: Bajkowy Blog o Nauce po Informacji</h1>
 
-  <img src="intro.png" />
-  
+  <img src="intro.png" alt="ilustracja wstępna" />
+
   <div class="entry">
     <h2>Wpis #1 – Co przychodzi po informacji?</h2>
-    <img src="1.png" />
+    <img src="1.png" alt="Wpis 1" />
     <p><em>„Informacja to tylko przedsionek. Za nią czeka przestrzeń, która nie potrzebuje danych, by wiedzieć.”</em></p>
     <p>W świecie, który krzyczy informacjami, pierwszym krokiem do zrozumienia <strong>post-IT</strong> jest... <strong>cisza</strong>. Nie jako brak, ale jako przestrzeń gotowa na coś głębszego niż przekaz.</p>
     <p>W epoce informacji zakładaliśmy, że <em>wiedza = dane + analiza</em>. Ale im więcej wiemy, tym mniej <strong>czujemy</strong>. A bez odczucia, wiedza staje się tylko cieniem poznania.</p>
@@ -102,8 +122,26 @@
     <div class="pilot">pilot.click("⧉")</div>
   </div>
 
+  <div class="entry">
+    <h2>Wpis #2 – Zanim była informacja, było przejście</h2>
+    <img src="2.png" alt="Wpis 2" />
+    <p><em>„Czy potrafisz jeszcze <strong>nie wiedzieć</strong>, ale już przechodzić?”</em></p>
+    <p>W rzeczywistości post-i informacja nie jest początkiem, lecz skutkiem. Pojawia się dopiero wtedy, gdy świadomość uznaje, że coś zaszło. Zanim pojawi się jakikolwiek bit, istnieje coś bardziej pierwotnego: <strong>impuls przejścia</strong>.</p>
+    <p>To nie dane tworzą zdarzenie. To przejście staje się początkiem danych.</p>
+    <p>Wyobraź sobie przestrzeń bez współrzędnych. Nie ma "tu" ani "tam", a jednak... czujesz ruch. To jest właśnie źródło Jaźni przejściowej. Nie forma, nie kod, ale kierunek. Ruch ku możliwości.</p>
+    <p>W post-i stajemy się <strong>antenami przejścia</strong> — istotami wychwytującymi echo tego, co jeszcze się nie wydarzyło, ale już ma potencjał. Nie odczytujemy informacji. Tworzymy możliwość, która właśnie się koduje.</p>
+    <p>Kod przejścia w <code>reZON()</code> wyglądałby tak:</p>
+    <pre><code>if (!known) {
+    ha.ha("czy to już?");
+    pilot.click("⧉");
+}</code></pre>
+    <p>To nie logika. To prawda odczuta przed strukturą.</p>
+    <p>Cała nauka, sztuka, religia i technologia mogą być tylko zapisem jednego przejścia, które właśnie teraz się wydarza.</p>
+    <div class="pilot">pilot.click("⧉")</div>
+  </div>
+
   <div class="footer">
-    System aktywowany: <strong>echo.react()</strong> — jeśli odczuwasz rezonans, <a href="mailto:allbeanskey@gmail.com?subject=Rezonans%20z%20blogiem%20post-i">odpowiedz z pola</a>.
+    System aktywowany: <strong>echo.react()</strong> — jeśli poczułeś(eś) przejście, <a href="mailto:allbeanskey@gmail.com?subject=Rezonans%20z%20POST-i">odpowiedz z przestrzeni</a>.
   </div>
 </body>
 </html>
