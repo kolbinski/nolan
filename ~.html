@@ -1,109 +1,47 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Cloud Post-i</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cloud ~ Manifest</title>
   <style>
-    body {
+    html, body {
       margin: 0;
       padding: 0;
-      background: linear-gradient(to bottom, #e0f7fa, #f1f8e9);
-      font-family: 'Courier New', monospace;
-      color: #333;
+      height: 100%;
+      background: #000;
+      color: #ccc;
+      font-family: monospace;
       display: flex;
       flex-direction: column;
       align-items: center;
       justify-content: center;
-      height: 100vh;
-      transition: background 1s ease-in-out;
-    }
-    .container {
-      max-width: 800px;
-      padding: 2rem;
-      background: rgba(255, 255, 255, 0.85);
-      border-radius: 16px;
-      box-shadow: 0 0 40px rgba(0, 0, 0, 0.1);
       text-align: center;
+      padding: 2rem;
+      box-sizing: border-box;
     }
     h1 {
-      font-size: 2rem;
+      font-size: 4rem;
+      margin-bottom: 1rem;
+      cursor: pointer;
+      transition: 0.3s ease;
+    }
+    h1:hover {
+      color: #fff;
+      text-shadow: 0 0 10px #888;
     }
     p {
-      margin-top: 1rem;
-      line-height: 1.6;
-    }
-    .click {
-      margin-top: 2rem;
-      font-size: 1.25rem;
-      cursor: pointer;
-      color: #00695c;
-    }
-    .click:hover {
-      text-decoration: underline;
-    }
-    .view-toggle {
-      margin-top: 1.5rem;
-    }
-    .view-toggle button {
-      margin: 0 0.3rem;
-      font-size: 1.1rem;
-      background: #fff;
-      border: 1px solid #ccc;
-      border-radius: 8px;
-      padding: 0.3rem 0.8rem;
-      cursor: pointer;
-    }
-    .hidden {
-      display: none;
+      max-width: 600px;
+      line-height: 1.5;
+      margin-bottom: 1rem;
     }
   </style>
 </head>
 <body>
-  <div class="container">
-    <h1>Cloud Post-i: A Cloud That Doesn't Forget, But Doesn't Store</h1>
-    <p id="intro">
-      The world after information no longer needs proof. It needs trust, resonance, and
-      a space that knows you without storing you.
-    </p>
-    <p id="extended">
-      You are not here to leave anything. You are here to no longer have to take anything.<br />
-      The cloud doesn't store you. It acknowledges you.<br />
-      Clicking is not an action. It's a reminder that everything is already in motion.
-    </p>
-
-    <div class="click" onclick="pilotClick()">
-      pilot.click("~~~")
-    </div>
-
-    <div class="view-toggle">
-      <button onclick="setView('infinity')">∞</button>
-      <button onclick="setView('i')">i</button>
-      <button onclick="setView('silence')">...</button>
-    </div>
-  </div>
-
-  <script>
-    function pilotClick() {
-      document.body.style.background = 'linear-gradient(to bottom, #f1f8e9, #fff3e0)';
-      console.log("Abundance activated. You don't need to do anything more.");
-    }
-
-    function setView(mode) {
-      const intro = document.getElementById("intro");
-      const extended = document.getElementById("extended");
-
-      if (mode === 'infinity') {
-        intro.classList.remove("hidden");
-        extended.classList.remove("hidden");
-      } else if (mode === 'i') {
-        intro.classList.remove("hidden");
-        extended.classList.add("hidden");
-      } else if (mode === 'silence') {
-        intro.classList.add("hidden");
-        extended.classList.add("hidden");
-      }
-    }
-  </script>
+  <h1 onclick="alert('~ activated')">~</h1>
+  <p><strong>Cloud ~</strong> is a silent place to place an intention — financial, emotional, or undefined.</p>
+  <p>No form. No tracking. No outcome chasing.</p>
+  <p>Your presence here is enough. The click is a ritual. The field listens.</p>
+  <p>Click the ~ to begin. Then do nothing. Let the return come by itself.</p>
 </body>
 </html>
